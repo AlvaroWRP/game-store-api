@@ -1,0 +1,35 @@
+GET https://localhost:7224/games
+
+###
+
+GET https://localhost:7224/games/8
+
+###
+
+POST https://localhost:7224/games
+Content-Type: application/json
+
+{
+    "name": "Forza Horizon 7",
+    "genreId": 4,
+    "price": 79.99,
+    "releaseDate": "2033-04-15"
+}
+
+###
+
+PUT https://localhost:7224/games/2
+Content-Type: application/json
+
+{
+    "name": "Formula 1 2024",
+    "genreId": 4,
+    "price": 59.99,
+    "releaseDate": "2025-04-20"
+}
+
+###
+
+DELETE https://localhost:7224/games/3
+
+###
